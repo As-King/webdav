@@ -71,7 +71,7 @@ def exec(z):
         else:
             true='good'
             cek.append(true)
-            hsl = open('hasil.txt','a')
+            hsl = open('deface/hasil.txt','a')
             hsl.write(url+'\n')
             hsl.close()
     except:
