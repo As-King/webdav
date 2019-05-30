@@ -11,7 +11,10 @@ g="\033[0;32m"
 w="\033[1;37m"
 c="\033[1;36m"
 y="\033[1;33m"
-os.mkdir('deface')
+try:
+    os.mkdir('deface')
+except:
+    pass
 banner ='''
     e Y8b               888 88P ,e,                         
    d8b Y8b     dP"Y     888 8P   "  888 8e   e88 888        
