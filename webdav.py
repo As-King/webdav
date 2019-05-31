@@ -85,9 +85,28 @@ except:
     print("Failed Read File")
     print("Check Your file list")
     pass
-b = input("Masukan alamat File : ")
-cc =input("Tulis ulang nama File saja: ")
-os.system("cp %s %s"%(b,cc))
+try:
+    while(True):
+        print('''
+        [1] . Tulis script
+        [2] . ambil dari File ''')
+        wanjer = input("Masukan Pilihan : ")
+        if wanjer == '1':
+            asw = input('copy script disini')
+            sad = input('input nama file dengan ?[exmple : web.html] : ')
+            hah = open('%s'%(sad),'w').write()
+            hah.write(asw)
+            hah.close()
+            b = str(sad)
+            break()
+        elif wanjer == '2':
+            ab = input("Masukan alamat File : ")
+            cc =input("Tulis ulang nama File saja: ")
+            os.system("cp %s %s"%(ab,cc))
+            b = str(cc)
+            break()
+except:
+    pass
 z = []
 for c in a:
     z.append(c)
@@ -109,4 +128,5 @@ for d in uhuy:
     x.append(d)
 f=ThreadPool(25)
 f.map(cek, x)
-print ("\n"+"%sFile Tersimpan di folder deface/Hasil.txt"%(c))
+print("\n")
+print ("%sFile Tersimpan di folder deface/Hasil.txt"%(c))
