@@ -98,13 +98,13 @@ try:
             hah.write(asw)
             hah.close()
             b = str(sad)
-            break()
+            break
         elif wanjer == '2':
             ab = input("Masukan alamat File : ")
             cc =input("Tulis ulang nama File saja: ")
             os.system("cp %s %s"%(ab,cc))
             b = str(cc)
-            break()
+            break
 except:
     pass
 z = []
