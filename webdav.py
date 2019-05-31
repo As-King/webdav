@@ -15,14 +15,14 @@ try:
     os.mkdir('deface')
 except:
     pass
-banner ='''
+banner ='''\033[1;31m
     e Y8b               888 88P ,e,                         
    d8b Y8b     dP"Y     888 8P   "  888 8e   e88 888        
   d888b Y8b   C88b  888 888 K   888 888 88b d888 888        
  d888888888b   Y88D     888 8b  888 888 888 Y888 888        
 d8888888b Y8b d,dP      888 88b 888 888 888  "88 888        
                                               ,  88P        
-                                             "8",P"         
+                                             "8",P" \033[1;32m        
 Y8b Y8b Y888P         888           888         Y8b Y88888P 
  Y8b Y8b Y8P   ,e e,  888 88e   e88 888  ,"Y88b  Y8b Y888P  
   Y8b Y8b Y   d88 88b 888 888b d888 888 "8" 888   Y8b Y8P   
